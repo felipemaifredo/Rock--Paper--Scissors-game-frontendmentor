@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pedra, Papel e Tesoura</title>
+  <script src="scripts.js" defer></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="header-container">
+    <div class="img-header-container">
+      <img src="../images/logo.svg" alt="Imagem Pedra Papel e Tesoura" />
+    </div>
+    <div class="score-container">
+      <p class="score-title">Score</p>
+      <p class="score-score" id="score-board"> 00 </p>
+    </div>
+  </div>
+
+
+  <div id="btns-container" class="btns-container">
+    <button class="btn-paper" id="btn-paper">
+      <img src="./images/icon-paper.svg" alt="Sí">
+    </button>
+    <button class="btn-scissors" id="btn-scissors">
+      <img src="./images/icon-scissors.svg" alt="">
+    </button>
+    <button class="btn-rock" id="btn-rock">
+      <img src="./images/icon-rock.svg" alt="">
+    </button>
+  </div>
+
+  <div id="result-container" class="result-container">
+    <p id="text-winner"> Loose/Win </p>
+    <button id="play-again-btn">Play Again</button>
+  </div>
+
+  <button id="play-btn" class="play-btn">Jogar</button>
+
+  <button id="open-rules-modal" class="button-rules"> Rules </button>
+  <div id="rules-modal-div" class="rules-container">
+    <div class="rules-header">
+      <p>Rules</p>
+      <button id="close-rules-modal">X</button>
+    </div>
+    <img src="./images/image-rules.svg" alt="Imagem das Regras do jogo">
+  </div>
+</body>
+
+</html>
